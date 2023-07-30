@@ -1,8 +1,7 @@
 const express = require('express');
 const app = express();
 app.use(express.json());
-const port = 3000;
-
+const port = normalizePort(process.env.PORT || '3000');
 let rooms = [];
 let bookings = [];
 
